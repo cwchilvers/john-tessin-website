@@ -1,0 +1,49 @@
+@import '../../../styles/main'
+
+.home
+    .nav-container
+        position: absolute
+        left: 0
+        top: 0
+        min-width: 100vw
+        min-height: 100vh
+        display: flex
+        justify-content: center
+
+        nav
+            position: absolute
+            bottom: 14vh
+            width: 100vw
+            padding: 3%
+            display: flex
+            justify-content: space-between
+            max-width: 1200px
+
+            button
+                font-family: 'Nexa Heavy'
+                border: none
+                background-color: $color-primary
+                color: $color-quaternary
+                font-size: 4vw
+                padding: 1vw 2vw 3.3vw 2vw
+                cursor: pointer
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+                text-decoration: underline
+                letter-spacing: 2px
+                -webkit-tap-highlight-color: rgba(0,0,0,0)
+                -webkit-tap-highlight-color: transparent
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.281)
+
+                @media(pointer: fine)
+                    &:hover
+                        background-color: $color-tertiary
+                        color: $color-secondary
+                        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out
+
+@media screen and (min-width: 1000px)
+    .home
+        .nav-container
+            nav
+                button
+                    font-size: 40px
+                    padding: 10px 20px 33px 20px

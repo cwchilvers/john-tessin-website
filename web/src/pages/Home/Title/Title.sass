@@ -1,0 +1,36 @@
+@import '../../../styles/main'
+
+.title
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 100vw
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: left
+    padding-left: 5%
+
+    h1, h2
+        font-family: 'Akira Expanded'
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.185)
+
+    h1
+        color: $color-primary
+        font-size: 8.5vw
+
+    h2
+        color: $color-secondary
+        font-size: 6vw
+
+@media screen and (min-width: 1100px)
+    .title
+        h1
+            font-size: 93.5px
+
+        h2
+            font-size: 66px
+
+@media screen and (min-width: 1400px)
+    .title
+        padding-left: calc(5% + ((100vw - 1400px) * 0.2))
